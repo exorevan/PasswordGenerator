@@ -43,7 +43,7 @@ public class Controller {
     private Label symbolsLabel;
 
     /**
-     * Метод, вызывающийся при нажатии кнопки mainButton, запуская процесс генерации паролей.
+     * Method launches with mainButton, starting the handler of password generator
      */
     @FXML
     private void buttonClicked() {
@@ -58,7 +58,7 @@ public class Controller {
     }
 
     /**
-     * Метод обновляет диапазон для случайной генерации символа с учётом выбранных параметров на главной странице приложения.
+     * Method updates the range of appropriate symbols for generating password (from main window information)
      */
     @FXML
     private void scopeUpdate() {
@@ -97,7 +97,7 @@ public class Controller {
     }
 
     /**
-     * Метод генерирует случайные символы из выбранного диапазона и, соединяя их, получает пароль и выводит его в поле приложения.
+     * Method generates random symbols from the settled range, concantinates them to password and show on main window
      */
     @FXML
     private void generateAndWritePasswords() {
@@ -140,7 +140,7 @@ public class Controller {
     }
 
     /**
-     * Метод обновляет таблицы в поле приложения, чтобы пользователь точно знал, сколько и со сколькими знаками сгенерировались пароли.
+     * Method updates field in the main window to show user how many symbols has been generated and from which range
      */
     @FXML
     private void updateLabels() {
